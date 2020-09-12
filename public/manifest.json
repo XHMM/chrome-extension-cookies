@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name" : "Get Cookies",
+  "version" : "0.0.1",
+  "description" : "View all cookies on current site, include root and sub domains",
+  "permissions": [ "cookies", "tabs", "http://*/*", "https://*/*" ],
+  "icons": { "16": "assets/cookie.png", "48": "assets/cookie.png", "128": "assets/cookie.png" },
+  "browser_action": {
+    "default_icon": "assets/cookie.png",
+    "default_title": "click to show cookies",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*"],
+      "js": ["popup.js"]
+    }
+  ]
+}

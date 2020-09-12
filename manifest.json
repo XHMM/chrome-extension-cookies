@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name" : "Get Cookies",
+  "version" : "0.0.1",
+  "description" : "View all cookies on current site, include root and sub domains",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "cookies",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
